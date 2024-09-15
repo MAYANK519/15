@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>love you</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+      /* Hide the iframe (YouTube player) */
+      .video-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1px;
+          height: 1px;
+          opacity: 0;
+          pointer-events: none; /* Disable interaction with the video */
+      }
+  </style>
+</head>
+<body>
+
+<div class="bg_heart"></div>
+
+<div class="container">
+  <h2 id="text1"></h2>
+</div>
+
+<!-- YouTube embed iframe -->
+<iframe class="video-background" src="https://www.youtube.com/watch?v=O7NiRr4QKVE" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+
+<!-- Scripts should be placed before the closing body tag -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
